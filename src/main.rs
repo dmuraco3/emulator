@@ -149,6 +149,7 @@ impl VM {
   TODO: 
     to write to file we need to encode rust to ascii 
     python does this with bytes.fromhex("<HEX NUMBER HERE>")
+        LOOK AT ../conv.py
     so yeah
 */
 
@@ -156,7 +157,7 @@ impl VM {
 fn main() {
 
     let mut vm = VM::new();
-    let path = "./file.obj".to_owned();
+    let path = "./txt.obj".to_owned();
     vm.read(path);
     vm.execute();
 }
